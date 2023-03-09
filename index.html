@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconcal.png" type="image/x-icon">
+    <title>EE | Calculadora</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/logo-calculator.png" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class='bx bx-home-alt'></i><div class="line"></div>HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/eeDeverloper"><i class='bx bxl-github'></i><div class="line"></div>GITHUB</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="centerCalc">
+        <div class="value">
+            <input id="valueNum" class="valueNum" value="" contenteditable="false" readonly onkeyup="false">
+            <p id="resultNum" class="resultNum"></p>
+        </div>
+        <div class="buttons">
+            <div class="one">
+                <button class="buttonCalc per" value="AC" id="clear">C</button>
+                <button class="buttonCalc per" value="+/-">+/-</button>
+                <button class="buttonCalc per" value="%">%</button>
+                <button class="buttonCalc es" value="/">÷</button>
+            </div>
+            <div class="two">
+                <button class="buttonCalc" value="7">7</button>
+                <button class="buttonCalc" value="8">8</button>
+                <button class="buttonCalc" value="9">9</button>
+                <button class="buttonCalc es" value="*">X</button>
+            </div>
+            <div class="try">
+                <button class="buttonCalc" value="4">4</button>
+                <button class="buttonCalc" value="5">5</button>
+                <button class="buttonCalc" value="6">6</button>
+                <button class="buttonCalc es" value="-">-</button>
+            </div>
+            <div class="four">
+                <button class="buttonCalc" value="1">1</button>
+                <button class="buttonCalc" value="2">2</button>
+                <button class="buttonCalc" value="3">3</button>
+                <button class="buttonCalc es" value="+">+</button>
+            </div>
+            <div class="five">
+                <button class="buttonCalc wd" value="0">0</button>
+                <button class="buttonCalc" value=".">.</button>
+                <button class="buttonCalc es" id="evalNum">=</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
